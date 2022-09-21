@@ -26,7 +26,7 @@
                 <p>All fields marked * are required.</p>
             </div>
             <div class="form">
-                <form action="#" method="post" id="form">
+                <form action="#" method="post" id="form" onsubmit="return verifyMatchingPasswords()">
                     <div class="col-1">
                         <div class="first-name-container">
                             <label for="first-name">First name *</label>
@@ -60,7 +60,7 @@
             <p id="password-check"></p>
         </div>
         <div class="submit">
-            <button type="submit" form="form">Create Account</button>
+            <button type="submit" id="submit" form="form">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
