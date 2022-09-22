@@ -135,7 +135,7 @@ button:hover {
 form {
     padding-top: 30px;
     display: flex;
-    gap: 50px;
+    flex-direction: column;
 }
 
 label,
@@ -171,4 +171,11 @@ input:hover {
 
 .invalid {
     border: 1px solid red;
+}
+
+.name-container,
+.email-num-container,
+.passwords-container {
+    display: flex;
+    gap: 50px;
 }
