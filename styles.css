@@ -80,13 +80,26 @@ img {
     background-color: white;
     box-shadow: 0px 2px 10px lightgray;
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .intro {
     height: 25vh;
+    padding-top: 10vh;
+}
+
+.intro,
+.form-intro {
     font-size: 1.3rem;
     font-weight: 550;
-    padding-top: 10vh;
+}
+
+.form-intro p+p,
+#password-check {
+    font-size: 0.7rem;
+    font-weight: 400;
 }
 
 .intro p+p {
@@ -117,4 +130,45 @@ button {
 
 button:hover {
     background-color: #596d48dd;
+}
+
+form {
+    padding-top: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+label,
+input {
+    width: 230px;
+    display: block;
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 20px;
+    height: 2rem;
+    border-radius: 4px;
+    border: 1px solid gainsboro;
+    font-family: inherit;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#password-check {
+    margin-top: -20px;
+    color: red;
+}
+
+input:focus,
+input:hover {
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+.invalid {
+    border: 1px solid red;
 }
