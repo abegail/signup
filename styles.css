@@ -20,7 +20,7 @@ label {
 
 body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .banner {
@@ -49,6 +49,11 @@ body {
     align-items: center;
     height: 4vh;
     margin-bottom: 0;
+}
+
+#log-in {
+    color: #596D48;
+    text-decoration: none;
 }
 
 .logo-text {
