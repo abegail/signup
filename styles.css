@@ -1,3 +1,13 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,4 +15,60 @@
 
 label {
     text-transform: uppercase;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.banner {
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background-color: #F9FAFB;
+    width: 65vw;
+}
+
+.footer,
+.footer a:visited {
+    font-size: 0.8rem;
+    color: #D3D3D3;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    margin-bottom: 0;
+}
+
+.logo-text {
+    font-family: norse-bold, 'Roboto', sans-serif;
+    color: white;
+    font-size: 6rem;
+    /* background-color: red; */
+    margin-top: 25px;
+}
+
+.logo-container {
+    height: 14vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+img {
+    height: 8rem;
+}
+
+.container {
+    flex-grow: 1;
 }
