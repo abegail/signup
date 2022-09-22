@@ -11,6 +11,7 @@ html {
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 label {
@@ -34,6 +35,8 @@ body {
 .content {
     background-color: #F9FAFB;
     width: 65vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer,
@@ -62,7 +65,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 
 img {
@@ -71,4 +74,47 @@ img {
 
 .container {
     flex-grow: 1;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 0px 2px 10px lightgray;
+    height: 30vh;
+}
+
+.intro {
+    height: 25vh;
+    font-size: 1.3rem;
+    font-weight: 550;
+    padding-top: 10vh;
+}
+
+.intro p+p {
+    padding-top: 1.3rem;
+}
+
+.intro,
+.form-container,
+.submit {
+    padding-left: 3vw;
+    padding-right: 14vw;
+}
+
+button {
+    width: 220px;
+    height: 3rem;
+    background-color: #596D48;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px lightgray;
+    border: #596D48;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #596d48dd;
 }
